@@ -35,7 +35,7 @@ export default function Home() {
   }, [typed, fullText]);
 
   return (
-    <main className="min-h-[calc(100vh-64px)] flex items-center justify-center px-6 py-10">
+    <main className="min-h-[calc(100vh-100px)] flex items-center justify-center px-6 py-10 -mt-12">
       <div className="max-w-3xl w-full text-center flex flex-col items-center gap-5">
         
         <h1 className="text-5xl font-semibold tracking-tight font-mono">crafted.</h1>
