@@ -88,8 +88,19 @@ export default function Home() {
           className="relative z-10 w-[min(92vw,900px)] max-h-[90vh] bg-white/10 rounded-xl shadow-2xl border border-black/10 overflow-hidden outline-none"
           onClick={(e) => e.stopPropagation()}
         >
-
+          <div className="flex items-center justify-between px-2 py-1 border-b border-black/10 bg-white/80 cursor-pointer">
+            <div className="text-lg font-medium text-black"></div>
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              aria-label="Close reservation modal"
+              className="cursor-pointer text-2xl leading-none text-black/60 hover:text-black rounded-full p-1 transition-colors focus:outline-none focus:ring-0 focus:ring-black/0"
+            >
+              &times;
+            </button>
+          </div>
           <div className="w-full">
+           
             <iframe
               src="https://jtian.notion.site/ebd/28b23e1f0d0e80269c77e2e3d4a7c18d"
               width="100%"
