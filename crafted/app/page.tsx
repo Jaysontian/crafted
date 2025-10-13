@@ -57,7 +57,7 @@ export default function Home() {
               aria-controls="reserve-modal"
               className="inline-flex items-center justify-center rounded-xl cursor-pointer bg-black text-white px-4 py-2 text-sm font-medium tracking-wide hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
             >
-              Reserve
+              Reserve a Drink
             </button>
           </div>
           <p className="text-[10pt] text-black/60 mt-4">Reshare our story, then reserve above for <span className="font-semibold">$1 off</span></p>
@@ -85,36 +85,19 @@ export default function Home() {
         <div
           ref={panelRef}
           tabIndex={-1}
-          className="relative z-10 w-[min(92vw,900px)] max-h-[90vh] bg-white rounded-xl shadow-2xl border border-black/10 overflow-hidden outline-none"
+          className="relative z-10 w-[min(92vw,900px)] max-h-[90vh] bg-white/10 rounded-xl shadow-2xl border border-black/10 overflow-hidden outline-none"
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="flex items-center justify-between px-4 py-3 border-b border-black/10">
-            <h2 id="reserve-title" className="text-base font-semibold tracking-wide">
-              Reserve your spot
-            </h2>
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              className="rounded-md px-2 py-1 text-sm text-black/70 hover:bg-black/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/40"
-              aria-label="Close"
-            >
-              ✕
-            </button>
-          </div>
 
           <div className="w-full">
             <iframe
               src="https://jtian.notion.site/ebd/28b23e1f0d0e80269c77e2e3d4a7c18d"
               width="100%"
-              height="600"
+              height="800"
               frameBorder="0"
               allowFullScreen
               title="Reservation embed"
             />
-          </div>
-
-          <div className="px-4 py-3 border-t border-black/10 bg-white/70 text-xs text-black/70">
-            Tip: show your reshare at pickup to redeem your <span className="font-semibold">$1 off</span>.
           </div>
         </div>
       </div>
