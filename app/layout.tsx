@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "crafted",
+  title: "Crafted",
   description: "a popup cafe with a focus on innovation & quality",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
