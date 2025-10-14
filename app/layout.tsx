@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Geist_Mono } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const inter = Inter({
@@ -30,7 +31,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${geistMono.variable} antialiased font-sans`}>
         <header className="w-full">
           <nav className="w-full flex items-center justify-around px-6 py-16">
-            <img src="/logo.png" alt="crafted" className="w-10 h-10" />
+            <Image src="/logo.png" alt="crafted" width={40} height={40} className="w-10 h-10" />
           </nav>
         </header>
         {children}

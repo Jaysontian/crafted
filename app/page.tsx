@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const [open, setOpen] = useState(false);
@@ -79,7 +80,7 @@ export default function Home() {
           <p className="text-[10pt] text-black/60 mt-4">Reshare our story, then reserve above for <span className="font-semibold">$1 off</span></p>
         </div>
 
-        <img src="/cup_main.png" alt="crafted" className="w-full h-auto" />
+        <Image src="/cup_main.png" alt="crafted" width={800} height={800} className="w-full h-auto" />
 
         {/* Menu Gallery Section */}
         <div className="w-full mt-32 mb-20">
@@ -96,9 +97,11 @@ export default function Home() {
               {/* Blueberry */}
               <div className="flex-shrink-0 w-64">
                 <div className="bg-white overflow-hidden border-2 border-black/20">
-                  <img 
+                  <Image 
                     src="/Blueberry.jpg" 
                     alt="Blueberry" 
+                    width={256}
+                    height={256}
                     className="w-full h-64 object-cover"
                   />
                 </div>
@@ -108,9 +111,11 @@ export default function Home() {
               {/* Guava */}
               <div className="flex-shrink-0 w-64">
                 <div className="bg-white overflow-hidden border-2 border-black/20">
-                  <img 
+                  <Image 
                     src="/Guava.jpg" 
                     alt="Guava" 
+                    width={256}
+                    height={256}
                     className="w-full h-64 object-cover"
                   />
                 </div>
@@ -120,9 +125,11 @@ export default function Home() {
               {/* Dubai Chocolate */}
               <div className="flex-shrink-0 w-64">
                 <div className="bg-white overflow-hidden border-2 border-black/20">
-                  <img 
+                  <Image 
                     src="/DubaiChocolate.jpg" 
                     alt="Dubai Chocolate" 
+                    width={256}
+                    height={256}
                     className="w-full h-64 object-cover"
                   />
                 </div>
@@ -132,9 +139,11 @@ export default function Home() {
               {/* Black Sesame */}
               <div className="flex-shrink-0 w-64">
                 <div className="bg-white overflow-hidden border-2 border-black/20">
-                  <img 
+                  <Image 
                     src="/BlackSesame.jpg" 
                     alt="Black Sesame" 
+                    width={256}
+                    height={256}
                     className="w-full h-64 object-cover"
                   />
                 </div>
@@ -144,9 +153,11 @@ export default function Home() {
               {/* Banana Bread */}
               <div className="flex-shrink-0 w-64">
                 <div className="bg-white overflow-hidden border-2 border-black/20">
-                  <img 
+                  <Image 
                     src="/BananaBread.jpg" 
                     alt="Banana Bread" 
+                    width={256}
+                    height={256}
                     className="w-full h-64 object-cover"
                   />
                 </div>
@@ -164,7 +175,7 @@ export default function Home() {
           <h2 className="text-2xl font-normal tracking-wide mb-8 text-black/60">about us</h2>
           
           <p className="text-sm leading-relaxed mb-6 text-black/60 font-mono">
-            we're a team of scrappy college students<br />
+            we&apos;re a team of scrappy college students<br />
             bringing quality matcha to campus.
           </p>
           
@@ -174,9 +185,11 @@ export default function Home() {
           </p>
           
           <div className="flex flex-col items-center">
-            <img 
+            <Image 
               src="/Team.jpg" 
               alt="Team photo" 
+              width={448}
+              height={448}
               className="w-full max-w-md rounded-lg"
             />
             <p className="mt-4 text-xs tracking-wide text-black/50 font-mono">
