@@ -85,7 +85,7 @@ export default function Home() {
         <div
           ref={panelRef}
           tabIndex={-1}
-          className="relative z-10 w-[min(92vw,900px)] max-h-[90vh] bg-white/10 rounded-xl shadow-2xl border border-black/10 overflow-hidden outline-none"
+          className="relative z-10 w-[min(92vw,900px)] h-fit max-h-[90vh] bg-white/10 rounded-xl shadow-2xl border border-black/10 overflow-hidden outline-none"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex items-center justify-between px-2 py-1 border-b border-black/10 bg-white/80 cursor-pointer">
@@ -99,12 +99,26 @@ export default function Home() {
               &times;
             </button>
           </div>
-          <div className="w-full">
+          <div className="w-full h-full">
            
+            <style>
+              {`
+                .scaled-iframe {
+                  transform: scale(0.8);
+                  transform-origin: top left;
+                  width: calc(100% / 0.8);
+                  height: calc(600px / 0.8);
+                  margin-bottom: -150px;
+                  border: 0;
+                  display: block;
+                }
+              `}
+            </style>
             <iframe
+              className="scaled-iframe"
               src="https://jtian.notion.site/ebd/28b23e1f0d0e80269c77e2e3d4a7c18d"
               width="100%"
-              height="800"
+              height="600px"
               frameBorder="0"
               allowFullScreen
               title="Reservation embed"
